@@ -18,7 +18,7 @@ root = lxml.html.fromstring(html)
 print root
 # this code didn't work because there's no div align='left'
 # root.cssselect("div[align='left']")
-selectstuff = root.cssselect("div")
+selectstuff = root.cssselect("a")
 print selectstuff
 # start looping through the list of results
 for i in selectstuff:

@@ -29,8 +29,7 @@ urltoscrape = "http://site.com/"
 listylist = ["Alpha","Bravo","Charlie"]
 # print listylist
 
-# for i in listylist:
-  print i
+for i in listylist:
   fullurl = ultroscrape+i
 # fullurl = http://site.com/Alpha
   print fullurl

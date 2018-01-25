@@ -30,7 +30,7 @@ listylist = ["Alpha","Bravo","Charlie"]
 # print listylist
 
 for i in listylist:
-  fullurl = ultroscrape+i
+  fullurl = urltoscrape+i
 # fullurl = http://site.com/Alpha
   print fullurl
 

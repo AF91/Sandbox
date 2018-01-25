@@ -20,6 +20,9 @@ root.cssselect("div[align='left']")
 selectstuff = root.cssselect("div[align='left']")
 print selectstuff
 #
+listylist = ["Alpha","Bravo","Charlie"]
+print listylist
+
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
@@ -31,3 +34,4 @@ print selectstuff
 # All that matters is that your final data is written to an SQLite database
 # called "data.sqlite" in the current working directory which has at least a table
 # called "data".
+

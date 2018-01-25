@@ -16,15 +16,20 @@ print html
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 print root
-root.cssselect("div[align='left']")
-selectstuff = root.cssselect("div[align='left']")
+# this code didn't work because there's no div align='left'
+# root.cssselect("div[align='left']")
+selectstuff = root.cssselect("a")
 print selectstuff
+# start looping through the list of results
+for i in selectstuff:
+  print i.text # .text grabs the text content of the tag in i
+  print i.attrib['href'] # .attrib grabs the value of the attribute specified
 #
 urltoscrape = "http://site.com/"
 listylist = ["Alpha","Bravo","Charlie"]
-print listylist
+# print listylist
 
-for i in listylist:
+# for i in listylist:
   print i
   fullurl = ultroscrape+i
 # fullurl = http://site.com/Alpha

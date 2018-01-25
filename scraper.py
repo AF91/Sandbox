@@ -20,8 +20,19 @@ root.cssselect("div[align='left']")
 selectstuff = root.cssselect("div[align='left']")
 print selectstuff
 #
+ultroscrape = "http://site.com/"
 listylist = ["Alpha","Bravo","Charlie"]
 print listylist
+
+for blah in listylist:
+  print blah
+  fullurl = ultrascape+blah
+  print fullurl
+
+# the word for tells python we want to start a loop
+# the next word is what to call the item each time we loop through - blah, in this case
+# in and then the name of the list
+# the colon sets extra instructions to 
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
